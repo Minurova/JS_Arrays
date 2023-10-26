@@ -22,3 +22,14 @@ function task3()
     console.log(arr);
     console.log(isChet(arr));
 }
+function task4()
+{
+    function calcFive(arr)
+    {
+       let newArr=arr.filter(elem=>elem%5==0);
+       return newArr;
+    }
+    let arr=Array.from(Array(10),()=>{return Math.round(Math.random()*20)});
+    console.log(arr);
+    console.log(calcFive(arr));
+}
