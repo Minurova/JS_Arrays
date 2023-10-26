@@ -12,3 +12,13 @@ function task2()
    let sum=arr.filter(elem>0 && elem<10).reduce((sum,elem)=>sum+elem,0);
    console.log(sum);
 }
+function task3()
+{
+    function isChet(arr)
+    {
+        return arr.every(elem=>elem%2==0);
+    }
+    let arr=Array.from(Array(10),()=>{return Math.round(Math.random()*20)});
+    console.log(arr);
+    console.log(isChet(arr));
+}
