@@ -46,12 +46,12 @@ function task5()
 }
 function task6()
 {
-    let arrRev=function (arr)
+    let newArr=function(arr)
     {
-       let summ=arr.reduce((sum,elem)=>sum+elem,0);
-       return arr.reverse();
+       let newArr=arr.push(arr.splice(0,1));
+       return arr;
     }
     let arr=Array.from(Array(10),()=>{return Math.round(Math.random()*20)});
     console.log(arr.toString());
-    console.log(arrRev(arr).toString());
+    console.log(newArr(arr).toString());
 }
