@@ -55,3 +55,17 @@ function task6()
     console.log(arr.toString());
     console.log(newArr(arr).toString());
 }
+function task7()
+{
+    let arr=Array.from(Array(6),()=>{return Math.round(Math.random()*20)});
+    console.log(arr.toString());
+    let sumChet=arr.reduce((sum,elem,index)=>{
+    if (index%2==0)
+    sum+=elem;
+    return sum;},0);
+    let sumNechet=arr.reduce((sum,elem,index)=>{
+    if (index%2!=0)
+    sum+=elem;
+    return sum;},0);
+    console.log(sumChet/sumNechet);
+}
