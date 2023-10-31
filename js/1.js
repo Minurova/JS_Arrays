@@ -69,3 +69,13 @@ function task7()
     return sum;},0);
     console.log(sumChet/sumNechet);
 }
+function task8()
+{
+    let str=prompt("Введите число");
+    if (isNaN(str)) alert ("Не числа");
+   else
+   {let numbers = Array.from(str);
+    newArr=numbers.map(elem=>+elem+1);
+    console.log(newArr.join(""));
+   }
+}
