@@ -79,3 +79,8 @@ function task8()
     console.log(newArr.join(""));
    }
 }
+function task9() {
+    let arr=['http://yandex.ru', 'http://vk.com', 'gooogle.com', 'http://travel.ru', 'net.com'];
+    arr=arr.filter(elem=>elem.startsWith('http://'));
+    console.log(arr.toString());
+}
