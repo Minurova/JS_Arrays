@@ -84,3 +84,29 @@ function task9() {
     arr=arr.filter(elem=>elem.startsWith('http://'));
     console.log(arr.toString());
 }
+function task10() {
+    let data = [
+        {
+        1: 11,
+        2: 12,
+        3: 13,
+        },
+        {
+        1: 21,
+        2: 22,
+        3: 23,
+        },
+        {
+        1: 24,
+        2: 25,
+        3: 26,
+        },
+        ];
+        let sum=0;
+        data.forEach(elem=>{
+            for ([key, value] of Object.entries(elem)) {
+               sum+=value; 
+            }
+        });
+        console.log(sum);
+}
